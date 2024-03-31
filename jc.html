@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <header>
+        <h1><span class="background-container"></span>
+            Pokédex di Jacopo
+        </h1>
+   </header>
+
+
+<div id="boxanag">
+    <img src="nite.png" class="imgdu" style="border-radius: 20px 0px 0px 20px;"><img src="nite2.png" class="imgdu" style="border-radius: 0px 20px 20px 0px;">
+
+<figcaption style="text-align: center;color: rgb(255, 255, 255);"><i>Forma standard e forma shiny di Dragonite</i>
+<p><span style="background-color: rgb(74, 15, 137);color: rgb(255, 255, 255); border: 4px solid rgb(74, 15, 137);">Drago</span>
+<span style="background-color: rgb(179, 177, 182);color: rgb(255, 255, 255); border: 4px solid rgb(179, 177, 182);">Volante</span>
+</p>
+</figcaption>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</div>
+
+<div id="dex" style="width: 50%;">
+<img src="dex.png" style="width: 30%;"/>
+<p>Informazioni e curiosità sui Pokémon</p>
+<nav>
+    <a href="nav1.html">Nav 1</a>
+    <a href="nav2.html">Nav 2</a>
+    <a href="nav3.html">Nav 3</a>
+    <a href="nav4.html">Nav 4</a>
+</nav>
+</div>
+
+<h2 style="width: 50%;">N° 0149 Dragonite</h2>
+
+
+
+<p>Quanto ti piace Dragonite?</p>
+<select onchange="document.getElementById('selezione').innerHTML = 'Grazie per aver scelto!'">
+    <option value="One"></option>
+    <option value="Two">Non mi piace affatto</option>
+    <option value="Three">Poco</option>
+    <option value="Four">Normale</option>
+    <option value="Five">Molto</option>
+    <option value="Six">E' il mio pokemon preferito</option>
+</select>
+<div id = "selezione"></div>
+
+<br/> 
+
+<div id="paragrafo"> Dragonite è un Pokémon pseudo-leggendario di doppio tipo Drago/Volante introdotto in prima generazione. Si evolve da <a href="https://wiki.pokemoncentral.it/Dragonair">Dragonair</a> a partire dal livello 55. 
+    È l'evoluzione finale di <a href= "https://wiki.pokemoncentral.it/Dratini">Dratini</a>.
+    <p>Nonostante siano massicci, i Dragonite sono incredibilmente agili e veloci. 
+    A differenza delle loro pre-evoluzioni, sono arancioni sbiaditi e possiedono braccia e gambe dotate ognuna di tre artigli. 
+    Conservano ancora il corno sulla fronte che possedevano da Dragonair, che adesso è di colore arancione come la maggior parte del loro corpo. 
+    Somigliano ai draghi bipedi europei e ognuno ha un paio di piccole ali verdi che possono aumentare di dimensione durante il volo. 
+    Hanno una statura superiore a quella di molti umani. I Dragonite possiedono anche antenne gialle a forma di S e un ventre striato color crema.</p>
+    <p>I Dragonite sono molto potenti. Possono causare grandi quantità di danni a molti Pokémon. Quando sono particolarmente arrabbiati, potrebbero scatenarsi al punto di non riuscire a controllare la loro aggressione per qualche tempo. 
+        Sono anche capaci di usare una varietà di attacchi elementali come Tuono, Geloraggio, Lanciafiamme, Idropulsar, e i pugni elementali. 
+        Possono volare a velocità elevatissime sia a bassa che ad alta quota, possono rompere la barriera del suono, possono fare il giro del mondo in 16 ore e possono volare a una velocità di 2505 chilometri all'ora, tre volte superiore a un aereo medio. 
+        Inoltre sono resistentissimi: anche se feriti gravemente rimangono molto aggressivi.
+    <p> I Dragonite sono molto rari in natura, ammettendo che sia possibile trovarli. Alcune persone affermano che da qualche parte esiste un'isola abitata esclusivamente da Dragonite. 
+        Alcuni Dragonite sono stati visti nel lago fuori alla Torre Dragospira. </p>
+    </p>
+</p>
+    
+</div>
+<br/>
+<h3>Uso competitivo</h3>
+<script>
+    var HP = 91;
+    var ATK = 134;
+    var DEF = 95;
+    var SPA = 100;
+    var SPD = 100;
+    var SPE = 80
+</script>
+
+<button onclick="document.getElementById('bsst').innerHTML = 'HP: '+HP+'; ATK: '+ATK+'; DEF: '+DEF+'; SPA: '+SPA+'; SPA: '+SPA+'; SPE: '+SPE+'; TOT: '+(HP+ATK+SPA+DEF+SPD+SPE)"> STATISTICHE
+</button>
+<div id = "bsst"></div>
+<br/>
+
+<div class="container">
+    <p id="hpIniziale">HP: <span>91</span></p>
+    <div class="short-input-wrapper"> <!-- Contenitore per la barra -->
+        <div id="evsValueContainer">
+            <span id="evsLabel">EVs</span> <!-- Label EVs sopra il valore EVs -->
+            <input type="range" id="evsInput" class="short-input" min="0" max="252" value="0"> <!-- Input di tipo range -->
+            <input type="number" id="evsValue" class="evs-input" min="0" max="252"> <!-- Campo di input numerico -->
+        </div>
+    </div>
+    <span id="ivLabel">IV</span> <!-- Label IV sopra il campo di input per le IVs -->
+    <input type="number" id="newInput" class="iv-input" min="0" max="31"> <!-- Campo di input numerico aggiuntivo -->
+    <p id="hpFinale"><span>91</span></p>
+</div>
+
+<script>
+// Definizione delle variabili
+var HP = 91;
+
+// Funzione per aggiornare l'HP in base al valore di EVPS
+function aggiornaHP() {
+    var evsInput = document.getElementById("evsInput").value;
+    // Azzera HP
+    HP = 91;
+    // Calcola incremento di HP in base a EVPS
+    var incrementoHP = Math.floor(evsInput / 4);
+    // Aggiorna HP
+    HP += incrementoHP;
+    // Aggiorna la visualizzazione di HP
+    document.getElementById("hpFinale").getElementsByTagName("span")[0].innerText = HP;
+}
+
+// Aggiornamento HP quando viene modificato il valore di EVPS
+document.getElementById("evsInput").addEventListener("input", function() {
+    aggiornaHP();
+    document.getElementById("evsValue").value = this.value; // Aggiorna il valore EVs nell'input numerico
+});
+
+// Aggiornamento della barra quando viene modificato il valore EVs dall'utente
+document.getElementById("evsValue").addEventListener("change", function() {
+    var evsValue = parseInt(this.value);
+    // Imposta il valore EVs nella barra
+    document.getElementById("evsInput").value = evsValue;
+    aggiornaHP(); // Aggiorna HP in base al nuovo valore EVs
+});
+
+// Aggiornamento HP quando viene modificato il nuovo input
+document.getElementById("newInput").addEventListener("input", function() {
+    HP = 91; // Azzera HP
+    var ivsInput = parseInt(this.value); // Ottiene il valore delle IVs
+    HP += ivsInput; // Aggiorna HP con il valore delle IVs
+    document.getElementById("hpFinale").getElementsByTagName("span")[0].innerText = HP; // Aggiorna la visualizzazione di HP
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+</body>
+<br/>
+<br/>
+</html>
